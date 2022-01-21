@@ -4,9 +4,10 @@
   "description": "Wordpress looking like admin panel for Next.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "browser": "",
+  "mode": "none",
   "scripts": {
     "build": "tsc & webpack",
+    "build:watch": "nodemon --exec \"npm run build\" --watch ./src -e ts,tsx",
     "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
+    "nodemon": "^2.0.15",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
     "webpack": "^5.66.0",
