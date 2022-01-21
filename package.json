@@ -1,0 +1,22 @@
+{
+  "name": "wordnext",
+  "version": "0.1.0",
+  "description": "Wordpress looking like admin panel for Next.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/777sevensevenseven777/wordnext.git"
+  },
+  "keywords": [
+    "wordpress",
+    "next",
+    "nextjs"
+  ],
+  "bugs": {
+    "url": "https://github.com/777sevensevenseven777/wordnext/issues"
+  },
+  "homepage": "wordnext.dev"
+}
