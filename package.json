@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "description": "Wordpress looking like admin panel for Next.js",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "browser": "",
   "scripts": {
+    "build": "tsc & webpack",
+    "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/777sevensevenseven777/wordnext/issues"
   },
-  "homepage": "wordnext.dev"
+  "homepage": "wordnext.dev",
+  "dependencies": {
+    "next": "^12.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
