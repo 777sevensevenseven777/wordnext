@@ -7,10 +7,13 @@
   "mode": "none",
   "scripts": {
     "build": "tsc & webpack",
-    "build:watch": "nodemon --exec \"npm run build\" --watch ./src -e ts,tsx",
+    "build:watch": "nodemon --exec \"npm run build\" --watch ./src -e ts,tsx,css,scss",
     "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/styles/main.css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/777sevensevenseven777/wordnext.git"
@@ -24,15 +27,23 @@
     "url": "https://github.com/777sevensevenseven777/wordnext/issues"
   },
   "homepage": "wordnext.dev",
-  "dependencies": {
-    "next": "^12.0.8"
-  },
   "devDependencies": {
-    "@types/react": "^17.0.38",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.1",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.5.2",
     "nodemon": "^2.0.15",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
+    "typescript-plugin-css-modules": "^3.4.0",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
+  },
+  "peerDependencies": {
+    "@types/react": "^17.0.38",
+    "next": "^12.0.8"
   }
 }
