@@ -1,12 +1,13 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface IProps {
   children: string | React.ReactNode;
 }
 
-export default function LoginLayout({ children }: IProps) {
-
+export default function Login({ children }: IProps) {
   return (
-    <div>{children}</div>
+    <div>
+      {children}
+    </div>
   );
 }
