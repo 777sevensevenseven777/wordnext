@@ -1,6 +1,7 @@
 import * as React from 'react';
 // import { useEffect } from 'react';
 import AdminBar from '../components/AdminBar';
+import AdminMenu from '../components/AdminMenu';
 
 interface IProps {
   children: string | React.ReactNode;
@@ -17,6 +18,9 @@ export default function Admin({ children }: IProps) {
 
   return (
     <div id="wpwrap">
+
+      <AdminMenu />
+
       <div id="wpcontent" className="">
 
         <AdminBar />
