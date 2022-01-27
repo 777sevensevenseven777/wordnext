@@ -62,7 +62,9 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/styles/main.css', to: 'styles' },
+        { from: 'src/styles/load-styles.css', to: 'styles' },
         { from: 'src/fonts', to: 'fonts' },
+        { from: 'src/images', to: 'images' },
       ]
     }),
     // new CleanWebpackPlugin(),

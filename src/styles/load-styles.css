@@ -2433,7 +2433,7 @@ p.popular-tags,
 table.widefat {
   background: #fff;
 }
-/* body,
+body,
 html {
   height: 100%;
   margin: 0;
@@ -2607,7 +2607,7 @@ kbd {
   background: #f0f0f1;
   background: rgba(0, 0, 0, 0.07);
   font-size: 13px;
-} */
+}
 .subsubsub {
   list-style: none;
   margin: 8px 0 0;
@@ -4112,7 +4112,7 @@ h1.nav-tab-wrapper {
   clear: both;
 }
 .spinner {
-  background: url(images/spinner.gif) no-repeat;
+  background: url(../images/spinner.gif) no-repeat;
   background-size: 20px 20px;
   display: inline-block;
   visibility: hidden;
@@ -4283,10 +4283,10 @@ div.star-holder {
   position: relative;
   height: 17px;
   width: 100px;
-  background: url(images/stars.png?ver=20121108) repeat-x bottom left;
+  background: url(../images/stars.png?ver=20121108) repeat-x bottom left;
 }
 div.star-holder .star-rating {
-  background: url(images/stars.png?ver=20121108) repeat-x top left;
+  background: url(../images/stars.png?ver=20121108) repeat-x top left;
   height: 17px;
   float: left;
 }
@@ -4685,13 +4685,13 @@ div.action-links {
   top: 50%;
   z-index: -1;
   margin: -10px 0 0 -10px;
-  background: #fff url(images/spinner.gif) no-repeat center;
+  background: #fff url(../images/spinner.gif) no-repeat center;
   background-size: 20px 20px;
   transform: translateZ(0);
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   #TB_window.plugin-details-modal.thickbox-loading:before {
-    background-image: url(images/spinner-2x.gif);
+    background-image: url(../images/spinner-2x.gif);
   }
 }
 .plugin-details-modal #TB_title {
@@ -5300,11 +5300,11 @@ img {
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   div.star-holder,
   div.star-holder .star-rating {
-    background: url(images/stars-2x.png?ver=20121108) repeat-x bottom left;
+    background: url(../images/stars-2x.png?ver=20121108) repeat-x bottom left;
     background-size: 21px 37px;
   }
   .spinner {
-    background-image: url(images/spinner-2x.gif);
+    background-image: url(../images/spinner-2x.gif);
   }
 }
 @media screen and (max-width: 782px) {
@@ -6146,7 +6146,7 @@ p.search-box {
 }
 input[type="email"].ui-autocomplete-loading,
 input[type="text"].ui-autocomplete-loading {
-  background-image: url(images/loading.gif);
+  background-image: url(../images/loading.gif);
   background-repeat: no-repeat;
   background-position: right center;
   visibility: visible;
@@ -10801,12 +10801,12 @@ form#tags-filter {
   border: none;
 }
 #content-resize-handle {
-  background: transparent url(images/resize.gif) no-repeat scroll right bottom;
+  background: transparent url(../images/resize.gif) no-repeat scroll right bottom;
   width: 12px;
   cursor: row-resize;
 }
 .rtl #content-resize-handle {
-  background-image: url(images/resize-rtl.gif);
+  background-image: url(../images/resize-rtl.gif);
   background-position: left bottom;
 }
 .wp-editor-expand #content-resize-handle {
@@ -11859,12 +11859,12 @@ table.links-table {
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   #content-resize-handle,
   #post-body .wp_themeSkin .mceStatusbar a.mceResize {
-    background: transparent url(images/resize-2x.gif) no-repeat scroll right bottom;
+    background: transparent url(../images/resize-2x.gif) no-repeat scroll right bottom;
     background-size: 11px 11px;
   }
   .rtl #content-resize-handle,
   .rtl #post-body .wp_themeSkin .mceStatusbar a.mceResize {
-    background-image: url(images/resize-rtl-2x.gif);
+    background-image: url(../images/resize-rtl-2x.gif);
     background-position: left bottom;
   }
 }
@@ -12584,7 +12584,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   .revision-tick.completed-false {
-    background-image: url(images/spinner-2x.gif);
+    background-image: url(../images/spinner-2x.gif);
   }
 }
 @media screen and (max-width: 782px) {
@@ -13376,7 +13376,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
   left: 50%;
   top: 50%;
   margin: -10px 0 0 -10px;
-  background: transparent url(images/spinner.gif) no-repeat center;
+  background: transparent url(../images/spinner.gif) no-repeat center;
   background-size: 20px 20px;
   transform: translateZ(0);
 }
@@ -13608,7 +13608,7 @@ video {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   .imgedit-wait:before {
-    background-image: url(images/spinner-2x.gif);
+    background-image: url(../images/spinner-2x.gif);
   }
 }
 @media screen and (max-width: 782px) {
@@ -15238,7 +15238,7 @@ body.full-overlay-active {
   z-index: -1;
   margin: -10px 0 0 -10px;
   transform: translateZ(0);
-  background: transparent url(images/spinner.gif) no-repeat center center;
+  background: transparent url(../images/spinner.gif) no-repeat center center;
   background-size: 20px 20px;
 }
 #customize-preview.wp-full-overlay-main.iframe-ready:before,
@@ -15247,14 +15247,14 @@ body.full-overlay-active {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   .wp-full-overlay .collapse-sidebar-arrow {
-    background-image: url(images/arrows-2x.png);
+    background-image: url(../images/arrows-2x.png);
     background-size: 15px 123px;
   }
   #customize-controls .notice.notification-overlay.notification-loading:before,
   #customize-preview.wp-full-overlay-main:before,
   .customize-loading #customize-container:before,
   .theme-install-overlay .wp-full-overlay-main:before {
-    background-image: url(images/spinner-2x.gif);
+    background-image: url(../images/spinner-2x.gif);
   }
 }
 @media screen and (max-width: 782px) {
@@ -15761,18 +15761,18 @@ body.full-overlay-active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("images/about-header-about.svg");
+  background-image: url("../images/about-header-about.svg");
   background-color: var(--accent-2);
   color: var(--text-light);
 }
 .credits-php .about__header {
-  background-image: url("images/about-header-credits.svg");
+  background-image: url("../images/about-header-credits.svg");
 }
 .freedoms-php .about__header {
-  background-image: url("images/about-header-freedoms.svg");
+  background-image: url("../images/about-header-freedoms.svg");
 }
 .privacy-php .about__header {
-  background-image: url("images/about-header-privacy.svg");
+  background-image: url("../images/about-header-privacy.svg");
 }
 .about__header-image {
   margin: 0 var(--gap) 3em;
@@ -16012,7 +16012,7 @@ body.full-overlay-active {
   margin: 1.5em auto;
 }
 .wp-badge {
-  background: #0073aa url(images/w-logo-white.png) no-repeat;
+  background: #0073aa url(../images/w-logo-white.png) no-repeat;
   background-position: center 25px;
   background-size: 80px 80px;
   color: #fff;
@@ -16028,7 +16028,7 @@ body.full-overlay-active {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .svg .wp-badge {
-  background-image: url(images/wordpress-logo-white.svg);
+  background-image: url(../images/wordpress-logo-white.svg);
 }
 .about-wrap .wp-badge {
   position: absolute;
@@ -16292,7 +16292,7 @@ body.full-overlay-active {
   margin: 0.6em 0;
 }
 .freedoms-php .column .freedoms-image {
-  background-image: url("images/freedoms.png");
+  background-image: url("../images/freedoms.png");
   background-size: 100%;
   padding-top: 100%;
 }
