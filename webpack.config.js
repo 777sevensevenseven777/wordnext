@@ -11,34 +11,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s(a|c)ss$/,
-        // exclude: /\.module.(s(a|c)ss)$/,
+        test: /\.css$/i,
         use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              esModule: true,
-              sourceMap: true,
-              importLoaders: 1,
-              modules: true
-              // modules: {
-                // namedExport: true,
-                // localIdentName: 'wordnext__[name]__[local]',
-              // },
-            }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-            }
-          }
+          isDevelopment ? 'style-loader?sourceMap' : MiniCssExtractPlugin.loader,
+          'css-loader?esModule'
         ],
       },
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
@@ -48,7 +29,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.css', '.scss'],
+    extensions: ['.tsx', '.ts', '.css'],
   },
   output: {
     filename: 'bundle.js',
@@ -61,8 +42,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'src/styles/main.css', to: 'styles' },
-        { from: 'src/styles/load-styles.css', to: 'styles' },
+        // { from: 'src/styles/load-styles.css', to: 'styles' },
         { from: 'src/fonts', to: 'fonts' },
         { from: 'src/images', to: 'images' },
       ]
