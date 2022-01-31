@@ -6,8 +6,8 @@
   "typings": "dist/index.d.ts",
   "mode": "none",
   "scripts": {
-    "build": "tsc & webpack",
-    "build:watch": "nodemon --exec \"npm run build\" --watch ./src -e ts,tsx,css,scss",
+    "build": "webpack",
+    "build:watch": "nodemon --exec \"npm run build\" --watch ./src -e js,ts,tsx,css",
     "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,14 +28,14 @@
   },
   "homepage": "wordnext.dev",
   "dependencies": {
-    "babel-plugin-react-css-modules": "^5.2.6"
+    "styled-jsx": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "babel-loader": "^8.2.3",
-    "babel-plugin-css-modules-transform": "^1.6.2",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.1",
     "css-loader": "^6.5.1",

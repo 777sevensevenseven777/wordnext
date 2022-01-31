@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
+    "noImplicitAny": true,
     "target": "es5",
     "jsx": "react-jsx",
     "module": "es6",
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "./distt",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "."
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.tsx"
+    "src/**/*.tsx",
+    "typings/*.d.ts"
   ],
   "exclude": ["node_modules", "dist"]
 }
